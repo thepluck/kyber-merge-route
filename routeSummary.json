@@ -1,0 +1,69 @@
+{
+    "tokenIn": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+    "amountIn": "50000000",
+    "amountInUsd": "48333.13506396122",
+    "tokenOut": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "amountOut": "48326872996",
+    "amountOutUsd": "48360.66928903165",
+    "gas": "452000",
+    "gasPrice": "2989428",
+    "gasUsd": "0.002491683048775922",
+    "l1FeeUsd": "0.3790133424987433",
+    "extraFee": {
+        "feeAmount": "0",
+        "chargeFeeBy": "",
+        "isInBps": false,
+        "feeReceiver": ""
+    },
+    "route": [
+        [
+            {
+                "pool": "0xc211e1f853a898bd1302385ccde55f33a8c4b3f3",
+                "tokenIn": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+                "tokenOut": "0x4200000000000000000000000000000000000006",
+                "swapAmount": "2500000",
+                "amountOut": "1310034976356753565",
+                "exchange": "pancake-v3",
+                "poolType": "pancake-v3",
+                "poolExtra": {
+                    "blockNumber": 0,
+                    "priceLimit": 1461446703485210103287273052203988822378723970341
+                },
+                "extra": {}
+            },
+            {
+                "pool": "0x72ab388e2e2f6facef59e3c3fa2c4e29011c2d38",
+                "tokenIn": "0x4200000000000000000000000000000000000006",
+                "tokenOut": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+                "swapAmount": "1310034976356753565",
+                "amountOut": "2417237787",
+                "exchange": "pancake-v3",
+                "poolType": "pancake-v3",
+                "poolExtra": {
+                    "blockNumber": 0,
+                    "priceLimit": 4295128740
+                },
+                "extra": {}
+            }
+        ],
+        [
+            {
+                "pool": "0x4e962bb3889bf030368f56810a9c96b83cb3e778",
+                "tokenIn": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+                "tokenOut": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+                "swapAmount": "47500000",
+                "amountOut": "45909635209",
+                "exchange": "aerodrome-cl",
+                "poolType": "slipstream",
+                "poolExtra": {
+                    "blockNumber": 0,
+                    "priceLimit": 1456195216270955103206513029158776779468408838535
+                },
+                "extra": {}
+            }
+        ]
+    ],
+    "routeID": "0dd98d64-f5f6-4417-8480-e939fcdff613",
+    "checksum": "7195353943399337876",
+    "timestamp": 1746111425
+}

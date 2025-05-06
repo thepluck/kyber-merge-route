@@ -1,0 +1,54 @@
+{
+  "tokens": [
+    {
+      "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "id": 0,
+      "sum_amount_in": 50000000
+    },
+    {
+      "token": "0x4200000000000000000000000000000000000006",
+      "id": 1,
+      "sum_amount_in": 1310034976356753565
+    },
+    {
+      "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "id": 2,
+      "sum_amount_in": 0
+    }
+  ],
+  "swaps": [
+    {
+      "pool": "0xc211e1f853a898bd1302385ccde55f33a8c4b3f3",
+      "token_in_id": 0,
+      "token_out_id": 1,
+      "exchange": "pancake-v3",
+      "pool_extra": {
+        "blockNumber": 0,
+        "priceLimit": 1461446703485210103287273052203988822378723970341
+      },
+      "amount_in": 2500000
+    },
+    {
+      "pool": "0x72ab388e2e2f6facef59e3c3fa2c4e29011c2d38",
+      "token_in_id": 1,
+      "token_out_id": 2,
+      "exchange": "pancake-v3",
+      "pool_extra": {
+        "blockNumber": 0,
+        "priceLimit": 4295128740
+      },
+      "amount_in": 1310034976356753565
+    },
+    {
+      "pool": "0x4e962bb3889bf030368f56810a9c96b83cb3e778",
+      "token_in_id": 0,
+      "token_out_id": 2,
+      "exchange": "aerodrome-cl",
+      "pool_extra": {
+        "blockNumber": 0,
+        "priceLimit": 1456195216270955103206513029158776779468408838535
+      },
+      "amount_in": 47500000
+    }
+  ]
+}
