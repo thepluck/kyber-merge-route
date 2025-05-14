@@ -81,31 +81,27 @@ while stack:
             stack.append(neighbor)
 
 # store token_ids with sum amount in as json, inside a json object with key "tokens"
-routeMerged = {}
-routeMerged["tokens"] = [
+routeMerged = [
     {
         "token": token,
         "id": token_ids[token],
         "sum_amount_in": node_sum_amount_ins[token],
+        "swaps": []
     }
     for token in token_ids
 ]
 
-# append swaps as json, inside a json object with key "swaps"
-routeMerged["swaps"] = [
-    {
-        "pool": swap.pool,
-        "token_in_id": token_ids[swap.token_in],
-        "token_out_id": token_ids[swap.token_out],
-        "exchange": swap.exchange,
-        "pool_extra": swap.pool_extra,
-        "amount_in": swap_amount_ins[swap],
-    }
-    for swap in swap_amount_ins.keys()
-]
+for swap in swap_amount_ins.keys():
+    routeMerged[token_ids[swap.token_in]]["swaps"].append(
+        {
+            "pool": swap.pool,
+            "token_out_id": token_ids[swap.token_out],
+            "exchange": swap.exchange,
+            "pool_extra": swap.pool_extra,
+            "amount_in": swap_amount_ins[swap],
+        }
+    )
 
 # write result to file
 with open("routeMerged.json", "w") as f:
     f.write(json.dumps(routeMerged, indent=2))
-
-print(len(routeMerged["swaps"]))
